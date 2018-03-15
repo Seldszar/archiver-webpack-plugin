@@ -36,6 +36,7 @@ Arguments:
 * `test`: All assets matching this RegExp are processed. Defaults to every asset.
 * `format`: The archive format. Defaults to `"zip"`.
 * `formatOptions`: The archive format options. Defaults to `"{}"`.
+* `archive`: An Archiver instance. Defaults to the built-in instance.
 
 
 [npm]: https://img.shields.io/npm/v/archiver-webpack-plugin.svg
