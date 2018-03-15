@@ -1,16 +1,23 @@
-[![npm][npm]][npm-url]
-[![deps][deps]][deps-url]
-
 <div align="center">
   <a href="https://github.com/webpack/webpack">
-    <img width="200" height="200" vspace="" hspace="25"
-      src="https://cdn.worldvectorlogo.com/logos/webpack-icon.svg">
+    <img width="200" src="https://cdn.worldvectorlogo.com/logos/webpack-icon.svg">
   </a>
   <h1>Archiver Plugin</h1>
   <p>Generate a compressed archive of compiled assets.<p>
+  <p>
+    [![NPM][https://img.shields.io/npm/v/archiver-webpack-plugin.svg]][https://npmjs.com/package/archiver-webpack-plugin]
+    [![Dependencies][https://david-dm.org/seldszar/archiver-webpack-plugin.svg]][https://david-dm.org/seldszar/archiver-webpack-plugin]
+  </p>
 </div>
 
-## Install
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Author](#author)
+- [License](#license)
+
+## Installation
 
 ```bash
 npm install archiver-webpack-plugin --save-dev
@@ -38,9 +45,10 @@ Arguments:
 * `formatOptions`: The archive format options. Defaults to `"{}"`.
 * `archive`: An Archiver instance. Defaults to the built-in instance.
 
+## Author
 
-[npm]: https://img.shields.io/npm/v/archiver-webpack-plugin.svg
-[npm-url]: https://npmjs.com/package/archiver-webpack-plugin
+Alexandre Breteau - [@0xSeldszar](https://twitter.com/0xSeldszar)
 
-[deps]: https://david-dm.org/seldszar/archiver-webpack-plugin.svg
-[deps-url]: https://david-dm.org/seldszar/archiver-webpack-plugin
+## License
+
+MIT © [Alexandre Breteau](https://seldszar.fr)
