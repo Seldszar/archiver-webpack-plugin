@@ -1,9 +1,18 @@
 {
   "name": "archiver-webpack-plugin",
   "version": "1.0.0",
+  "description": "Generate a compressed archive of compiled assets.",
   "author": "Alexandre Breteau <contact@seldszar.fr> (https://seldszar.fr)",
-  "description": "Generate a compressed archive of compiled assets",
+  "license": "MIT",
   "main": "lib/index.js",
+  "homepage": "https://github.com/seldszar/archiver-webpack-plugin#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seldszar/archiver-webpack-plugin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/seldszar/archiver-webpack-plugin/issues"
+  },
   "files": [
     "lib",
     "LICENSE.md",
@@ -22,24 +31,14 @@
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-prettier": "^2.6.0",
     "husky": "^0.14.3",
-    "lint-staged": "^4.2.3",
-    "nsp": "^2.6.3",
+    "lint-staged": "^7.0.0",
+    "nsp": "^3.2.1",
     "prettier": "^1.11.1",
     "semantic-release": "^15.0.3"
   },
   "peerDependencies": {
     "archiver": "^2.0.0",
     "webpack": "^2.0.0 || ^3.0.0 || ^4.0.0"
-  },
-  "engines": {
-    "node": ">=4"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/seldszar/archiver-webpack-plugin.git"
-  },
-  "bugs": {
-    "url": "https://github.com/seldszar/archiver-webpack-plugin/issues"
   },
   "lint-staged": {
     "*.js": "eslint --format codeframe"
