@@ -2,14 +2,14 @@
   "root": true,
   "parser": "babel-eslint",
   "extends": [
-    "airbnb-base"
+    "plugin:prettier/recommended"
+  ],
+  "plugins": [
+    "prettier"
   ],
   "rules": {
-    "import/no-unresolved": ["error", {
-      "ignore": [
-        "archiver",
-        "webpack"
-      ]
+    "prettier/prettier": ["error", {
+      "trailingComma": "all",
     }]
   }
 }

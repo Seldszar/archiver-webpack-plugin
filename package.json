@@ -5,10 +5,12 @@
   "description": "Generate a compressed archive of compiled assets",
   "main": "lib/index.js",
   "files": [
-    "lib"
+    "lib",
+    "LICENSE.md",
+    "README.md"
   ],
   "scripts": {
-    "lint": "eslint --cache src test",
+    "lint": "eslint --format codeframe lib",
     "lint-staged": "lint-staged",
     "precommit": "npm run lint-staged",
     "release": "standard-version",
@@ -17,11 +19,12 @@
   "devDependencies": {
     "babel-eslint": "^8.0.1",
     "eslint": "^4.7.2",
-    "eslint-config-airbnb-base": "^12.0.1",
-    "eslint-plugin-import": "^2.2.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.6.0",
     "husky": "^0.14.3",
     "lint-staged": "^4.2.3",
     "nsp": "^2.6.3",
+    "prettier": "^1.11.1",
     "standard-version": "^4.0.0"
   },
   "peerDependencies": {
@@ -39,9 +42,6 @@
     "url": "https://github.com/seldszar/archiver-webpack-plugin/issues"
   },
   "lint-staged": {
-    "*.js": [
-      "eslint --fix",
-      "git add"
-    ]
+    "*.js": "eslint --format codeframe"
   }
 }
