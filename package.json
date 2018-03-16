@@ -24,6 +24,9 @@
     "plugin",
     "webpack"
   ],
+  "engines": {
+    "node": ">=8.0.0"
+  },
   "scripts": {
     "lint": "eslint --format codeframe lib",
     "lint-staged": "lint-staged",
