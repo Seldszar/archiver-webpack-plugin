@@ -18,6 +18,11 @@
     "LICENSE.md",
     "README.md"
   ],
+  "keywords": [
+    "webpack",
+    "plugin",
+    "archiver"
+  ],
   "scripts": {
     "lint": "eslint --format codeframe lib",
     "lint-staged": "lint-staged",
