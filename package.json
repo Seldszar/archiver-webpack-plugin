@@ -27,7 +27,9 @@
     "lint": "eslint --format codeframe lib",
     "lint-staged": "lint-staged",
     "precommit": "npm run lint-staged",
+    "pretest": "npm-install-peers",
     "release": "semantic-release",
+    "test": "jest",
     "security": "nsp check"
   },
   "devDependencies": {
@@ -36,7 +38,9 @@
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-prettier": "^2.6.0",
     "husky": "^0.14.3",
+    "jest": "^22.4.2",
     "lint-staged": "^7.0.0",
+    "npm-install-peers": "^1.2.1",
     "nsp": "^3.2.1",
     "prettier": "^1.11.1",
     "semantic-release": "^15.0.3"
