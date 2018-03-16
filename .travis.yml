@@ -6,4 +6,4 @@ deploy:
   provider: script
   skip_cleanup: true
   script:
-    - npx release
+    - npm run semantic-release

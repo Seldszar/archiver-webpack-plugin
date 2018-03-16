@@ -31,7 +31,7 @@
     "lint": "eslint --format codeframe lib",
     "lint-staged": "lint-staged",
     "precommit": "npm run lint-staged",
-    "release": "semantic-release",
+    "semantic-release": "semantic-release",
     "test": "jest",
     "security": "nsp check"
   },
