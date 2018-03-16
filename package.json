@@ -19,9 +19,10 @@
     "README.md"
   ],
   "keywords": [
-    "webpack",
+    "archiver",
+    "compression",
     "plugin",
-    "archiver"
+    "webpack"
   ],
   "scripts": {
     "lint": "eslint --format codeframe lib",
