@@ -5,8 +5,15 @@
   <h1>Archiver Plugin</h1>
   <p>Generate a compressed archive of compiled assets.<p>
   <p>
-    [![NPM][https://img.shields.io/npm/v/archiver-webpack-plugin.svg]][https://npmjs.com/package/archiver-webpack-plugin]
-    [![Dependencies][https://david-dm.org/seldszar/archiver-webpack-plugin.svg]][https://david-dm.org/seldszar/archiver-webpack-plugin]
+    <a href="https://npmjs.com/package/archiver-webpack-plugin">
+      <img alt="NPM" src="https://img.shields.io/npm/v/archiver-webpack-plugin.svg">
+    </a>
+    <a href="https://david-dm.org/seldszar/archiver-webpack-plugin">
+      <img alt="Dependencies" src="https://david-dm.org/seldszar/archiver-webpack-plugin.svg">
+    </a>
+    <a href="https://travis-ci.org/seldszar/archiver-webpack-plugin">
+      <img alt="Build Status" src="https://travis-ci.org/seldszar/archiver-webpack-plugin.svg?branch=master">
+    </a>
   </p>
 </div>
 
