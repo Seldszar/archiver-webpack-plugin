@@ -1,9 +1,22 @@
 language: node_js
 
-node_js: 8
+cache:
+  directories:
+    - ~/.npm
 
-deploy:
-  provider: script
-  skip_cleanup: true
-  script:
-    - npm run semantic-release
+node_js:
+  - 9
+  - 8
+
+notifications:
+  email: false
+
+branches:
+  only:
+    - master
+  except:
+    - /^v\d+\.\d+\.\d+$/
+
+after_success:
+  - npm install -g travis-deploy-once
+  - travis-deploy-once "npm run semantic-release"
