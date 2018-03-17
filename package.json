@@ -1,6 +1,6 @@
 {
   "name": "archiver-webpack-plugin",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "Generate a compressed archive of compiled assets.",
   "author": "Alexandre Breteau <contact@seldszar.fr> (https://seldszar.fr)",
   "license": "MIT",
