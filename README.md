@@ -14,6 +14,8 @@
 
 ## Table of Contents
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Seldszar/archiver-webpack-plugin.svg)](https://greenkeeper.io/)
+
 - [Installation](#installation)
 - [Usage](#usage)
 - [Author](#author)
