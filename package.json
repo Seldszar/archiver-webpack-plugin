@@ -36,7 +36,7 @@
     "security": "nsp check"
   },
   "devDependencies": {
-    "archiver": "^2.1.1",
+    "archiver": "^3.0.0",
     "babel-eslint": "^8.0.1",
     "eslint": "^4.7.2",
     "eslint-config-prettier": "^2.9.0",
