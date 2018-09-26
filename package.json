@@ -41,7 +41,7 @@
     "eslint": "^4.7.2",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-prettier": "^2.6.0",
-    "husky": "^0.14.3",
+    "husky": "^1.0.0",
     "jest": "^22.4.2",
     "lint-staged": "^7.0.0",
     "nsp": "^3.2.1",
