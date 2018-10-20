@@ -28,30 +28,41 @@
     "node": ">=8.0.0"
   },
   "scripts": {
-    "lint": "eslint --format codeframe lib",
+    "documentation": "documentation build lib/index.js --format=md --output=API.md",
+    "lint": "eslint --format codeframe **/*.js",
     "lint-staged": "lint-staged",
-    "precommit": "npm run lint-staged",
     "semantic-release": "semantic-release",
-    "test": "jest",
-    "security": "nsp check"
+    "test": "jest"
   },
   "devDependencies": {
-    "archiver": "^2.1.1",
-    "babel-eslint": "^8.0.1",
-    "eslint": "^4.7.2",
-    "eslint-config-prettier": "^2.9.0",
-    "eslint-plugin-prettier": "^2.6.0",
-    "husky": "^0.14.3",
-    "jest": "^22.4.2",
-    "lint-staged": "^7.0.0",
-    "nsp": "^3.2.1",
-    "prettier": "^1.11.1",
-    "semantic-release": "^15.0.3",
-    "webpack": "^4.1.1"
+    "@commitlint/cli": "^7.1.2",
+    "@commitlint/config-conventional": "^7.1.2",
+    "archiver": "^2.0.0",
+    "babel-eslint": "^10.0.1",
+    "documentation": "^8.1.2",
+    "eslint": "^5.6.1",
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "husky": "^1.0.0",
+    "jest": "^23.6.0",
+    "lint-staged": "^7.3.0",
+    "prettier": "^1.14.3",
+    "semantic-release": "^15.9.16"
   },
   "peerDependencies": {
     "archiver": "^2.0.0",
     "webpack": "^2.0.0 || ^3.0.0 || ^4.0.0"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "npm run lint-staged"
+    }
   },
   "lint-staged": {
     "*.js": "eslint --format codeframe"

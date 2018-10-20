@@ -16,27 +16,56 @@
 
 - [Installation](#installation)
 - [Usage](#usage)
+- [API](#api)
 - [Author](#author)
 - [License](#license)
 
 ## Installation
 
 ```bash
-npm install archiver-webpack-plugin --save-dev
+npm install archiver archiver-webpack-plugin --save-dev
 ```
 
 ## Usage
 
+### Using the built-in Archiver instance
+
 ```javascript
-var ArchiverPlugin = require("archiver-webpack-plugin");
+const ArchiverPlugin = require("archiver-webpack-plugin");
 
 module.exports = {
-	plugins: [
-		new ArchiverPlugin({
-			format: "zip"
-		})
-	]
-}
+  plugins: [
+    new ArchiverPlugin({
+      format: "zip",
+      formatOptions: {
+        zlib: {
+          level: 9,
+        },
+      },
+    }),
+  ],
+};
+```
+
+### Using a custom Archiver instance
+
+```javascript
+const ArchiverPlugin = require("archiver-webpack-plugin");
+const archiver = require("archiver");
+
+const archive = archiver("zip", {
+  zlib: {
+    level: 9,
+  },
+});
+
+module.exports = {
+  plugins: [
+    new ArchiverPlugin({
+      archive,
+    }),
+  ],
+};
 ```
 
 Arguments:
@@ -46,6 +75,10 @@ Arguments:
 * `format`: The archive format. Defaults to `"zip"`.
 * `formatOptions`: The archive format options. Defaults to `"{}"`.
 * `archive`: An Archiver instance. Defaults to the built-in instance.
+
+## API
+
+See the detailed [API Reference](API.md).
 
 ## Author
 
