@@ -50,8 +50,8 @@
     "semantic-release": "^15.13.3"
   },
   "peerDependencies": {
-    "archiver": "^2.0.0",
-    "webpack": "^2.0.0 || ^3.0.0 || ^4.0.0"
+    "archiver": ">=2.0.0",
+    "webpack": ">=2.0.0"
   },
   "commitlint": {
     "extends": [
