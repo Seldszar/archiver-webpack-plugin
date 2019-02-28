@@ -24,13 +24,9 @@
     "plugin",
     "webpack"
   ],
-  "engines": {
-    "node": ">=8.0.0"
-  },
   "scripts": {
     "documentation": "documentation build lib/index.js --format=md --output=API.md",
-    "lint": "eslint --format codeframe **/*.js",
-    "lint-staged": "lint-staged",
+    "lint": "eslint --format codeframe .",
     "release": "semantic-release",
     "test": "jest"
   },
@@ -61,7 +57,7 @@
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "npm run lint-staged"
+      "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {
