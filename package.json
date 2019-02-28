@@ -31,7 +31,7 @@
     "documentation": "documentation build lib/index.js --format=md --output=API.md",
     "lint": "eslint --format codeframe **/*.js",
     "lint-staged": "lint-staged",
-    "semantic-release": "semantic-release",
+    "release": "semantic-release",
     "test": "jest"
   },
   "devDependencies": {
